@@ -263,6 +263,9 @@ footer{
         height: 100vh;
     
     }
+    footer{
+        display: none;
+    }
     .menu h1{
         padding: 40px;
         color: #fff;
