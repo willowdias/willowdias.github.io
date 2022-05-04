@@ -178,6 +178,8 @@ section .Produtos{
 }
 
 .produto-destaque{
+    
+    margin: 3px 0px 5px 4px;
 	float: left;
 	width: 33%;
 	text-align: left;
@@ -263,9 +265,24 @@ footer{
     align-items: flex-start;
     
     }
+    .info-carro {
+        margin-top: 50px;
+        
+
+    }
     .info-carro{
-        display: inline;
-        text-align: center;
+  
+
+
+display: inline-block;
+width: 450px;
+text-align: center;
+justify-content: center;
+align-items: center;
+
+    }
+    .btn1-mais-detalhes{
+        width: 450px;    
     }
     .menu{
         background-color: #38322e;
