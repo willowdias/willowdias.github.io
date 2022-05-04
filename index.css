@@ -255,6 +255,18 @@ footer{
     text-decoration: underline;
 }
 @media screen and (max-width: 1000px) {
+    section .Produtos{
+ 
+        display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+    }
+    .info-carro{
+        display: inline;
+        text-align: center;
+    }
     .menu{
         background-color: #38322e;
         width: 50%;
