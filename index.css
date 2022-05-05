@@ -56,17 +56,15 @@ header nav a:hover {
     justify-content:space-between;
     height: 70px;
     bottom: 0;
-    display:flex;
     background-color: rgb(48, 48, 48);
    
 }
+
 .direct a{
+    
     margin-left: 40px;
     border-radius: 5px;
-  
-    left: 25px;
     background-color: red;
-    padding: 10px 25px;
     text-decoration: none;
     color:rgb(255, 255, 255);
 
@@ -74,13 +72,34 @@ header nav a:hover {
     font-weight: bold;
     font-size: 25px;  
 }
-.direct input{
+.form button {
+    
+    width: 20%;
+    padding: 10px 25px;
+    background: #2196F3;
+    color: white;
+    font-size: 25px; 
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+  }
+.form {
+    width: 50%;
+}
+.form input[type=text] {
     padding: 10px 25px;
     font-size: 25px; 
     font-weight: bold;
     border-radius: 5px;
-    width: 500px;
-}
+    
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+  }
+  
+  /* When the input field gets focus, change its width to 100% */
+  .form input[type=text]:focus {
+    width: 400px;
+  }
 /*menu departamento*/
 .close {
     text-align: center;
@@ -152,7 +171,9 @@ header nav a:hover {
     position:relative;
     padding: 15px 10px;
     border-radius: 15px;
-    background-color: black;
+    font-size: 30px;
+    background-color: transparent;
+    border: none;
 }
 /*main*/
 .TemaProduto{
@@ -302,11 +323,20 @@ align-items: center;
     }
     .direct a{
         padding: 15px;
+        width: 100%;
+        margin-left: 15px;
     }
-    .direct input{
-        
-        width: 50%;
-    }
+    
+    .form input[type=text] {
+        width: 200px;
+        -webkit-transition: width 0.4s ease-in-out;
+        transition: width 0.4s ease-in-out;
+      }
+      
+      /* When the input field gets focus, change its width to 100% */
+      .form input[type=text]:focus {
+        width: 70%;
+      }
 body{
     scrollbar-width: none;
     background-color: #bbb;
