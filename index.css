@@ -50,31 +50,39 @@ header nav a:hover {
     box-shadow: 0px 0px 5px 10px white;
     transition-timing-function: ease-in-out;
 }
-.direct-pag{
-    display:flex;
-    align-items: center;
-    justify-content:space-between;
-    height: 70px;
-    bottom: 0;
+.contain-direct{
+    
+    list-style:none;
+    width: 100%;
+    padding: 10px 50px;
+    margin-top: 0px;
+    display: flex;
+    
     background-color: rgb(48, 48, 48);
    
 }
-
+.direct-pag{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    bottom: 0;
+    justify-content:flex-start;
+    
+}   
 .direct a{
     padding: 15px 25px;
-    margin-left: 40px;
     border-radius: 5px;
     background-color: red;
     text-decoration: none;
     color:rgb(255, 255, 255);
-
     font-family: "Arial";
     font-weight: bold;
     font-size: 25px;  
 }
 .form button {
     
-    width: 20%;
+    
     padding: 10px 25px;
     background: #2196F3;
     color: white;
@@ -83,22 +91,20 @@ header nav a:hover {
     border-left: none;
     cursor: pointer;
   }
-.form {
-    width: 50%;
-}
+
 .form input[type=text] {
     padding: 10px 25px;
     font-size: 25px; 
     font-weight: bold;
     border-radius: 5px;
-    
+    width: 200px;
     -webkit-transition: width 0.4s ease-in-out;
     transition: width 0.4s ease-in-out;
   }
   
   /* When the input field gets focus, change its width to 100% */
   .form input[type=text]:focus {
-    width: 400px;
+    width: 800px;
   }
 /*menu departamento*/
 .close {
@@ -313,30 +319,38 @@ align-items: center;
         height: 100vh;
     
     }
-    footer{
-        display: none;
-    }
+    
     .menu h1{
         padding: 40px;
         color: #fff;
         text-align: center;    
     }
     .direct a{
+        width: 150px;
         padding: 15px 10px;
-        width: 100%;
-        margin-left: 15px;
+      
+        
+    }
+    .direct a:hover {
+        text-decoration: none;
+        font-size:none;
+        box-shadow: 0px 0px 0px 0px white;
+        
     }
     
     .form input[type=text] {
-        width: 200px;
+        width: 180px;
         -webkit-transition: width 0.4s ease-in-out;
         transition: width 0.4s ease-in-out;
       }
       
       /* When the input field gets focus, change its width to 100% */
       .form input[type=text]:focus {
-        width: 70%;
+        width: 400px;
       }
+      footer{
+        display: none;
+    }
 body{
     scrollbar-width: none;
     background-color: #bbb;
