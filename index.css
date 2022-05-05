@@ -169,7 +169,7 @@ section{
    
 }
 section .Produtos{
- 
+    margin: 3px 0px 5px 4px;
     padding:25px 40px;
     justify-content: center;
         
@@ -257,19 +257,22 @@ footer{
     text-decoration: underline;
 }
 @media screen and (max-width: 1000px) {
-    section .Produtos{
+    .Produtos{
  
-        display:flex;
+      display: flex; 
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    
     
     }
-    .info-carro {
-        margin-top: 50px;
-        
-
+    .produto-destaque{
+    
+      width: 100%;
+      
+      text-align: center;
+    justify-content: center;
+    align-items: center;
     }
+   
     .info-carro{
 display: inline-block;
 width: 450px;
