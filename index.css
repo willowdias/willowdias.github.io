@@ -293,11 +293,7 @@ footer{
 }
 @media screen and (max-width: 1000px) {
   
-   
-    .Produtos{
-      
-        
-    }
+  
     .produto-destaque{
         border: 1px solid black;
         display: flex;
@@ -316,7 +312,7 @@ footer{
         
 width: 580px;
 text-align: center;
-background-color: #006080;
+
 
 
     }
@@ -326,9 +322,12 @@ background-color: #006080;
     }
     .btn1-mais-detalhes{
         
-        margin-top: 100px;
-        width: 250px;
-        
+        position: relative;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+      
+        top: 75px;
       
     }
     .menu{
@@ -348,7 +347,7 @@ background-color: #006080;
     .direct a{
         width: 150px;
         padding: 15px 10px;
-      
+        
         
     }
     .direct a:hover {
