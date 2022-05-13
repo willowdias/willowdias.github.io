@@ -289,6 +289,11 @@ footer{
     .menu{
         width: 500px;
     }
+    .box-produtos{
+        width: 500px;
+        height: 500px;
+        border-radius:15px;
+    }
     .produtos {
         display: flex;
         margin: 0 auto;
