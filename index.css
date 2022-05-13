@@ -206,13 +206,15 @@ header nav a:hover {
 	border-color: #C78C19;
 }
 .produtos li:active {
+    position: absolute;
 	border-color: #088C19;	
+    background-color: #006080;
 }
 .produtos li:hover h2 {
-	font-size: 95px;
+	font-size: 55px;
 }
 .produtos h2 {
-	font-size: 80px;
+	font-size: 40px;
 	font-weight: bold;
 }
 
