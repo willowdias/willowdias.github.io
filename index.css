@@ -283,19 +283,17 @@ footer{
     color: aqua;
     text-decoration: underline;
 }
-@media screen and (max-width: 1000px) {
-   
+@media screen and (max-width: 450px) {
+    
     .menu{
         width: 250px;
     }
     .produtos {
         margin: 0 auto;
-      
+        flex-wrap: wrap;
         background-size:cover;
-        flex-direction: column;
         align-items: center;
         justify-content: center;
-        float: left;
     
         
     }
