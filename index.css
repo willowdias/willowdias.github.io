@@ -194,8 +194,9 @@ header nav a:hover {
     display: inline-block;
 	text-align: center;
 	width: 30%;
+    
 	vertical-align: top;
-	margin: 0 1.5%;
+	margin: 6px;
 	padding: 30px 20px;
 	box-sizing: border-box;
 	border: 2px solid #000000;
@@ -283,12 +284,13 @@ footer{
     color: aqua;
     text-decoration: underline;
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 1000px) {
     
     .menu{
         width: 250px;
     }
     .produtos {
+        display: flex;
         margin: 0 auto;
         flex-wrap: wrap;
         background-size:cover;
@@ -298,9 +300,9 @@ footer{
         
     }
     .produtos li{
-        display: inline-block;
+        
         text-align: center;
-        margin: 13px;
+        margin: 25px;
       
     }
 
