@@ -300,12 +300,26 @@ footer{
         
     }
     .produtos li{
-        width: 500px;
+
+        width: 100%;
         text-align: center;
         margin: 25px;
+        border: none;
+        display: block;
+        justify-items: center;
+        background-color: #F2FAFA;
+        
+
       
     }
+    
+    .btn1-mais-detalhes{
 
+        width: 250px;
+        margin: 0 auto;
+        padding: 15px;
+    }
+   
     
   
       footer{
