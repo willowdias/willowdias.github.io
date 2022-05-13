@@ -181,50 +181,50 @@ header nav a:hover {
     background-color: transparent;
     border: none;
 }
-/*main*/
-.TemaProduto{
-    background-color: #c4c3c3;
-    color: rgb(0, 0, 0);
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-    font-size: 40px;
-    align-items: center;
-    justify-content: center;
-    display: flex;
+
+
+
+
+.produtos {
+	width: 940px;
+	margin: 0 auto;
+	padding: 50px 0;
 }
-section.veiculos-destaque{
-	padding:90px 2%;
+.produtos li{
+    display: inline-block;
+	text-align: center;
+	width: 30%;
+	vertical-align: top;
+	margin: 0 1.5%;
+	padding: 30px 20px;
+	box-sizing: border-box;
+	border: 2px solid #000000;
+	border-radius: 10px;
+}
+.produtos li:hover {
+	border-color: #C78C19;
+}
+.produtos li:active {
+	border-color: #088C19;	
+}
+.produtos li:hover h2 {
+	font-size: 34px;
+}
+.produtos h2 {
+	font-size: 30px;
+	font-weight: bold;
 }
 
-section.veiculos-destaque .Produtos{
-	/*Vamos deixar o padrão que é 1400px*/
-	/*max-width: 1000px;*/
-	padding:40px 0;
-}
-
-.produto-destaque{
-    float: left;
-	width: 15%;
-	text-align: left;
-   
-	
-}
-
-.info-carro{
-font-size: 25px;
-
-
-
-}
-.info-carro h2,p{
-    align-items: center;
-    text-align: center;
+.produto-descricao {
+	font-size: 18px;
 }
 .box-produtos{
-    width:15%;
-    height: 85%;
-    margin:5px;
-    min-width: 350px;
-    background-size: 100% 100%;
+    position: static;
+    width:5%;
+    
+   
+    min-width: 180px;
+  
 
 }
 .box-produtos:hover {
@@ -244,8 +244,7 @@ font-size: 25px;
 	color: white;
 	font-size: 16px;
 	font-style: italic;
-	width: 150px;
-    margin-left: 30%;
+	
 }
 /*botao volta top pagina*/
 .back-to-top {
@@ -269,14 +268,7 @@ font-size: 25px;
   }
 /*roda pe*/
 footer{
-    position: relative;
-    background-color: rgb(0, 0, 0);
-    height: 100px;
-    width: 100%;
-    
-    bottom: 0;
-    justify-content: center ;
-    display: flex;
+    background-color: #000000;
 }
 .Linkrodape a{
     text-decoration: none;
@@ -292,81 +284,46 @@ footer{
     text-decoration: underline;
 }
 @media screen and (max-width: 1000px) {
-  
-  
-    .produto-destaque{
-        border: 1px solid black;
+    .produtos{
+    align-items: flex-start;
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    }
+    .produtos li{
+        margin: 15px;
         display: flex;
-        float: none;
+	text-align: center;
+	width: 600px;
+
+        
+    }
+    .produtos h2 {
+        font-size: 25px;
+        font-weight: bold;
+        position: absolute;
+        margin-top: -25px;
+    }
+    .produto-descricao{
+        text-align: center;
+        width: 200px;
+        height: 50px;
+        margin-top:25% ;
+        text-align: center;
+        display: flex;
+
+    }
+   
+    .btn1-mais-detalhes{
         width: 100%;
         text-align: center;
-        margin-top:20px;
+        display: block;
+        height: 56px;
+        margin-top:10%;
         
     }
-    .box-produtos{
-        width: 100px;
-        align-items: flex-start;
-
-    }
-    .info-carro{
-        
-width: 580px;
-text-align: center;
-
-
-
-    }
-    .info-carro h2{
-        margin-top: 15px;
-        
-    }
-    .btn1-mais-detalhes{
-        
-        position: relative;
-        align-items: center;
-        text-align: center;
-        justify-content: center;
-      
-        top: 75px;
-      
-    }
-    .menu{
-        background-color: #38322e;
-        width: 50%;
-        margin: 0; padding: 0;
-        float: left;
-        height: 100vh;
-    
-    }
-    
-    .menu h1{
-        padding: 40px;
-        color: #fff;
-        text-align: center;    
-    }
-    .direct a{
-        width: 150px;
-        padding: 15px 10px;
-        
-        
-    }
-    .direct a:hover {
-        text-decoration: none;
-        font-size:none;
-        box-shadow: 0px 0px 0px 0px white;
-        
-    }
-    
-    .form input[type=text] {
-        width: 180px;
-        -webkit-transition: width 0.4s ease-in-out;
-        transition: width 0.4s ease-in-out;
-      }
-      
-      /* When the input field gets focus, change its width to 100% */
-      .form input[type=text]:focus {
-        width: 400px;
-      }
+  
+  
       footer{
         display: none;
     }
